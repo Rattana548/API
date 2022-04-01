@@ -1,0 +1,39 @@
+GET http://localhost:3000/Subscriber
+
+###
+GET http://localhost:3000/Subscriber/6246871a8b825858f6ac4c42
+
+
+###
+POST http://localhost:3000/Subscriber
+Content-Type: application/json
+
+{
+    "name": "Anirach Mingkhwan",
+    "subscribedToChannel": "Travel"
+}
+###
+POST http://localhost:3000/Subscriber
+Content-Type: application/json
+
+{
+    "name": "Rattana Chomwihok",
+    "subscribedToChannel": "Opz tv"
+}
+
+###
+PATCH  http://localhost:3000/Subscriber/6246896101ac10eb2a6a0ae4
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "EIEI TV"
+}
+###
+PATCH  http://localhost:3000/Subscriber/6246871a8b825858f6ac4c42
+Content-Type: application/json
+
+{
+    "name": "Humto"
+}
+###
+DELETE http://localhost:3000/Subscriber/6246899d01ac10eb2a6a0ae9
